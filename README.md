@@ -10,6 +10,8 @@ it only references env vars. Secrets must be provided by the project’s own Dop
    doppler secrets set SUPABASE_URL=...
    doppler secrets set SUPABASE_KEY=...
    doppler secrets set CONTEXT7_API_KEY=xxx
+   doppler secrets set DATAFORSEO_LOGIN=your_login
+   doppler secrets set DATAFORSEO_PASSWORD=your_password
 
 2. Bring this pack into the project:
 
