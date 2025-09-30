@@ -2,20 +2,43 @@
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
-      "env": { "MCP_FS_ROOT": "/workspace" }
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem"
+      ],
+      "env": {
+        "MCP_FS_ROOT": "/workspace"
+      }
     },
     "firecrawl": {
       "command": "npx",
-      "args": ["-y", "firecrawl-mcp"],
-      "env": { "FIRECRAWL_API_KEY": "${env:FIRECRAWL_API_KEY}" }
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "${env:FIRECRAWL_API_KEY}"
+      }
     },
     "supabase": {
       "command": "npx",
-      "args": ["-y", "supabase-mcp"],
+      "args": [
+        "-y",
+        "supabase-mcp"
+      ],
       "env": {
         "SUPABASE_URL": "${env:SUPABASE_URL}",
         "SUPABASE_KEY": "${env:SUPABASE_KEY}"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "${env:CONTEXT7_API_KEY}"
       }
     }
   }
