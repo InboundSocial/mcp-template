@@ -28,3 +28,7 @@ it only references env vars. Secrets must be provided by the project’s own Dop
 
 4. Run app with Doppler (already in Dev Template):
    npm run dev
+
+### Notes
+
+- Playwright MCP: no secrets required. If browser not installed, run the tool `browser_install` from the MCP client to auto-install the browsers as per Playwright MCP docs.
